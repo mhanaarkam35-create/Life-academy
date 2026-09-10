@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Life Academy | أكاديمية الحياة</title>
+
+    <meta name="description"
+          content="أكاديمية تفاعلية لتعلم مهارات الحياة والتطوير الشخصي والعمل والتكنولوجيا.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <span>LA</span>
+        <div>
+            <strong>Life Academy</strong>
+            <small>أكاديمية الحياة</small>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#courses">الدروس</a>
+        <a href="#progress">تقدمي</a>
+        <a href="#about">عن المشروع</a>
+    </nav>
+
+    <button id="themeBtn" class="theme-btn">🌙</button>
+
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">🚀 تعلم • طبّق • تطوّر</span>
+
+        <h1>
+            تعلّم الحياة
+            <br>
+            <span>بطريقة عملية</span>
+        </h1>
+
+        <p>
+            منصة تعليمية تساعدك على فهم نفسك،
+            تطوير مهاراتك، تعلم العمل والمال والتكنولوجيا
+            وبناء مستقبل أفضل.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#courses" class="primary-btn">
+                ابدأ التعلم
+            </a>
+
+            <a href="#about" class="secondary-btn">
+                اكتشف المشروع
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="brain">🧠</div>
+
+        <h3>مهمتك اليوم</h3>
+
+        <p>
+            تعلّم شيئًا جديدًا وطبّقه في حياتك.
+        </p>
+
+        <div class="mini-progress">
+            <div id="heroProgress"></div>
+        </div>
+
+        <small id="heroProgressText">
+            0% مكتمل
+        </small>
+
+    </div>
+
+</section>
+
+
+<!-- STATS -->
+
+<section class="stats">
+
+    <div class="stat">
+        <strong>110+</strong>
+        <span>درسًا</span>
+    </div>
+
+    <div class="stat">
+        <strong>10</strong>
+        <span>مجالات</span>
+    </div>
+
+    <div class="stat">
+        <strong>∞</strong>
+        <span>فرص للتعلم</span>
+    </div>
+
+</section>
+
+
+<!-- COURSES -->
+
+<section id="courses" class="section">
+
+    <div class="section-title">
+
+        <span>المعرفة</span>
+
+        <h2>اختر مجالًا وتعلّم</h2>
+
+        <p>
+            ابدأ من الأساسيات ثم انتقل تدريجيًا إلى المستوى المتقدم.
+        </p>
+
+    </div>
+
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔎 ابحث عن درس أو مجال..."
+        >
+
+    </div>
+
+
+    <div id="coursesGrid" class="courses-grid">
+
+        <!-- سيتم إنشاء البطاقات بواسطة JavaScript -->
+
+    </div>
+
+</section>
+
+
+<!-- LESSON -->
+
+<section id="lessonSection" class="lesson-section hidden">
+
+    <button id="backBtn" class="back-btn">
+        ← العودة إلى الدروس
+    </button>
+
+    <article class="lesson-card">
+
+        <div id="lessonIcon" class="lesson-icon">
+            🧠
+        </div>
+
+        <span id="lessonCategory" class="lesson-category">
+            تطوير الذات
+        </span>
+
+        <h2 id="lessonTitle">
+            عنوان الدرس
+        </h2>
+
+        <div id="lessonContent" class="lesson-content">
+        </div>
+
+
+        <div class="lesson-actions">
+
+            <button id="completeBtn" class="primary-btn">
+                ✓ إكمال الدرس
+            </button>
+
+        </div>
+
+    </article>
+
+
+    <!-- QUIZ -->
+
+    <div id="quizBox" class="quiz-box">
+
+        <h3>🧩 اختبر نفسك</h3>
+
+        <p id="question">
+            السؤال
+        </p>
+
+        <div id="answers"></div>
+
+        <p id="quizResult"></p>
+
+    </div>
+
+</section>
+
+
+<!-- PROGRESS -->
+
+<section id="progress" class="section progress-section">
+
+    <div class="section-title">
+
+        <span>رحلتك</span>
+
+        <h2>تقدمك في التعلم</h2>
+
+    </div>
+
+
+    <div class="progress-card">
+
+        <div class="progress-info">
+
+            <div>
+                <strong id="points">0</strong>
+                <span>نقطة</span>
+            </div>
+
+            <div>
+                <strong id="completed">0</strong>
+                <span>درس مكتمل</span>
+            </div>
+
+            <div>
+                <strong id="percentage">0%</strong>
+                <span>التقدم</span>
+            </div>
+
+        </div>
+
+
+        <div class="big-progress">
+
+            <div id="bigProgress"></div>
+
+        </div>
+
+
+        <p id="motivation">
+            ابدأ أول درس اليوم 🚀
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section about">
+
+    <div class="section-title">
+
+        <span>Life Academy</span>
+
+        <h2>لماذا هذا المشروع؟</h2>
+
+    </div>
+
+    <div class="about-grid">
+
+        <div>
+            <h3>🎯 الهدف</h3>
+
+            <p>
+                تحويل تعلم مهارات الحياة إلى تجربة عملية
+                تحتوي على دروس وتمارين واختبارات.
+            </p>
+        </div>
+
+
+        <div>
+            <h3>💻 التكنولوجيا</h3>
+
+            <p>
+                هذا الإصدار مبني باستخدام HTML وCSS وJavaScript.
+                ويمكن تطويره لاحقًا إلى تطبيق كامل بقاعدة بيانات.
+            </p>
+        </div>
+
+
+        <div>
+            <h3>🚀 المستقبل</h3>
+
+            <p>
+                يمكن إضافة الحسابات، الشهادات، لوحة التحكم،
+                الذكاء الاصطناعي، ونظام تعليمي متكامل.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <strong>Life Academy</strong>
+
+    <p>
+        تعلّم اليوم لتصبح أقوى غدًا.
+    </p>
+
+    <small>
+        © 2026 Life Academy
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
